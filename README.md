@@ -9,8 +9,10 @@ Sebelumnya, saya memiliki pengalaman sebagai **staf pelaksana, admin logistik, k
 
 [Klik disini]()
 
-### Bahasa yang saya gunakan 
+### Bahasa yang saya gunakan && Skill
 
-[bahasa](https://skillicons.dev/icons?i=html,css,js,tailwind,github,vscode,python)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,tailwind,figma,github,vscode,python3)](https://skillicons.dev)
+
+---
 
 ---
