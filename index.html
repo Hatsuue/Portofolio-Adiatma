@@ -15,6 +15,8 @@
     <header id="header">
       <div class="container">
         <nav class="navbar">
+        <a href="#" class="logo-container">
+        <img src="assets/profile.jpg" alt="Logo" class="logo-img" />
           <a href="#" class="logo">Adiatma<span>Wasara</span></a>
           <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
@@ -27,8 +29,13 @@
       </div>
     </header>
 
-    <section id="hero" class="hero">
-      <div class="hero-left">
+  <section id="hero" class="hero">
+<div class="hero-right">
+            <div class="based-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Serang, Indonesia</span>
+          </div>
+  <div class="hero-left">
         <h1>Seorang yang berambisi Menjadi Frontend Development</h1>
         <a href="mailto:wasaraadyatma@gmail.com" class="btn-hire">Hire Me <span>👋</span></a>
         <div class="stats">
@@ -57,14 +64,6 @@
               <li><i class="fas fa-map-marker-alt"></i> Location: Serang, Indonesia</li>
             </ul>
           </div>
-
-          <div class="hero-right">
-            <img src="assets/profile.jpg" alt="Adiatma Wasara" class="profile-img" />
-            <div class="info-box">
-              <p><strong>Name :</strong> Adiatma Wasara</p>
-              <p><strong>Based In :</strong> Serang, Indonesia</p>
-            </div>
-
             <div class="about-content">
               <div class="about-text">
                 <h3>Who I Am</h3>
@@ -84,8 +83,6 @@
           <a href="https://wa.me/62859102857730"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
-    </section>
-
     <!-- Projects Section -->
     <section id="projects">
     <h2 style="text-align: center;">Project</h2>
@@ -121,6 +118,7 @@
             <div class="project-links">
               <a href="https://hatsuue.github.io/PDFME/" class="btn-view" target="_blank" rel="noopener">View Project</a>
             </div>
+
           </div>
         </div>
 
@@ -152,7 +150,7 @@
 
     <!-- 3D SketchUp Section -->
     <div class="sketchup-container">
-      <h1>SketchUp 3D modelng</h1>
+      <h1>SketchUp 3D modeling</h1>
       <iframe 
         src="https://3dwarehouse.sketchup.com/embed/830aeac0-0ee9-46fb-ba9b-0186706d89b9?token=fu7crQl9Q4Q=&binaryName=s21" 
         frameborder="0" 
@@ -172,13 +170,12 @@
       </div>
     </section>
 
-    <section id="experience" style="padding: 4rem 8vw;">
-      <h2 style="text-align:center;">Work Experience</h2>
-    <!-- Tombol berada di dalam div yang diratakan ke tengah -->
-    <div style="text-align: center;">
-      <button id="toggleExperience" style="background: #a855f7; color: white; padding: 0.6rem 1.2rem; border: none; border-radius: 0.5rem; cursor: pointer; margin-bottom: 1rem;">
-        Tampilkan
-      </button>
+<section id="experience" style="padding: 4rem 8vw;">
+  <h2 style="text-align:center;">Work Experience</h2>
+  <div style="text-align: center;">
+    <button id="toggleExperience" style="background: #a855f7; color: white; padding: 0.6rem 1.2rem; border: none; border-radius: 0.5rem; cursor: pointer; margin-bottom: 1rem;">
+      Tampilkan
+    </button>
 
       <div id="experienceContent" style="display: none;">
         <div class="experience-item">
@@ -241,11 +238,27 @@
           </div>
         </div>
       </section>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function setupToggle(buttonId, containerId) {
+      const toggleBtn = document.getElementById(buttonId);
+      const content = document.getElementById(containerId);
 
+      toggleBtn.addEventListener("click", () => {
+        const isVisible = content.style.display === "block";
+        content.style.display = isVisible ? "none" : "block";
+        toggleBtn.textContent = isVisible ? "Tampilkan" : "Sembunyikan";
+      });
+    }
+
+    // Aktifkan toggle untuk masing-masing bagian
+    setupToggle("toggleProjects", "projects-container");
+    setupToggle("toggleExperience", "experienceContent");
+  });
+</script>
       <div class="container">
         <div class="footer-content">
-          <a href="#" class="footer-logo">Adiatma<span>Wasara</span></a>
-
+          <a href="#" class="footer-logo">Terimakasih<span>Ibuku</span></a>
           <ul class="footer-links">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -263,22 +276,7 @@
         </div>
       </div>
     </footer>
-
-    <script>
-    function setupToggle(buttonId, containerId) {
-    const toggleBtn = document.getElementById(buttonId);
-    const content = document.getElementById(containerId);
-
-    toggleBtn.addEventListener("click", () => {
-      const isVisible = content.style.display === "block";
-      content.style.display = isVisible ? "none" : "block";
-      toggleBtn.textContent = isVisible ? "Tampilkan" : "Sembunyikan";
-    });
-  }
-
-  // Aktifkan toggle untuk masing-masing bagian
-  setupToggle("toggleProjects", "projects-container");
-  setupToggle("toggleExperience", "experienceContent");
-</script>
-  </body>
+    </body>
+  </div>
+</div>
 </html>
