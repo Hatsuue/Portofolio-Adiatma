@@ -28,9 +28,10 @@
         </nav>
       </div>
     </header>
-
+    <div id="clock">Memuat waktu...</div>
+    <script type="module" src="./main.js"></script>
   <section id="hero" class="hero">
-<div class="hero-right">
+  <div class="hero-right">
             <div class="based-location">
             <i class="fas fa-map-marker-alt"></i>
             <span>Serang, Indonesia</span>
@@ -52,7 +53,6 @@
             <p>Clients</p>
           </div>
         </div>
-
         <!-- profile info-->
         <section id="about">
           <div class="about-container">
@@ -83,6 +83,7 @@
           <a href="https://wa.me/62859102857730"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
+      
     <!-- Projects Section -->
     <section id="projects">
     <h2 style="text-align: center;">Project</h2>
@@ -118,7 +119,6 @@
             <div class="project-links">
               <a href="https://hatsuue.github.io/PDFME/" class="btn-view" target="_blank" rel="noopener">View Project</a>
             </div>
-
           </div>
         </div>
 
@@ -146,8 +146,6 @@
     </div>
   </section>
 </section>
-
-
     <!-- 3D SketchUp Section -->
     <div class="sketchup-container">
       <h1>SketchUp 3D modeling</h1>
@@ -225,7 +223,6 @@
                 <p>Serang, Indonesia</p>
               </div>
             </div>
-
             <div class="contact-form">
               <form action="https://formspree.io/f/xyzjreej" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required />
@@ -238,24 +235,6 @@
           </div>
         </div>
       </section>
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    function setupToggle(buttonId, containerId) {
-      const toggleBtn = document.getElementById(buttonId);
-      const content = document.getElementById(containerId);
-
-      toggleBtn.addEventListener("click", () => {
-        const isVisible = content.style.display === "block";
-        content.style.display = isVisible ? "none" : "block";
-        toggleBtn.textContent = isVisible ? "Tampilkan" : "Sembunyikan";
-      });
-    }
-
-    // Aktifkan toggle untuk masing-masing bagian
-    setupToggle("toggleProjects", "projects-container");
-    setupToggle("toggleExperience", "experienceContent");
-  });
-</script>
       <div class="container">
         <div class="footer-content">
           <a href="#" class="footer-logo">Terimakasih<span>Ibuku</span></a>
@@ -276,7 +255,12 @@
         </div>
       </div>
     </footer>
-    </body>
+    <script src="path/to/anime.iife.min.js"></script>
+    <!-- Tambahkan Anime.js dari CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="main.js"></script>
+  <script src="app.js"></script>
+  </body>
   </div>
 </div>
 </html>

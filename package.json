@@ -1,0 +1,15 @@
+{
+  "name": "portofolio2",
+  "version": "1.0.0",
+  "description": "Saya adalah mahasiswa **Teknik Informatika** yang sedang bertransisi dari dunia kerja ke dunia teknologi.   Sebelumnya, saya memiliki pengalaman sebagai **staf pelaksana, admin logistik, kurir, dan desainer**, yang telah membentuk kemampuan saya dalam bekerja secara mandiri maupun dalam tim.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^4.1.2"
+  }
+}
